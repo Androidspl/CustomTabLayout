@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <!-- alpha:图像透明度 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.6"
+            android:background="@android:color/darker_gray"/>
+
+        <com.mdn.weibo.custom.CustomTabView
+            android:id="@+id/custom_tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <!--android:background="@color/mTabBottom">-->
+            <!--android:layout_alignParentBottom="true">-->
+
+        </com.mdn.weibo.custom.CustomTabView>
+
+    </LinearLayout>
+
+    <!--<com.mdn.weibo.custom.CustomView
+        android:id="@+id/custom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/add">
+
+    </com.mdn.weibo.custom.CustomView>-->
+
+    <ImageView
+        android:id="@+id/halfcircle"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:background="@drawable/halfcircle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"/>
+
+    <!--<ImageView
+        android:id="@+id/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>-->
+
+    <ImageView
+        android:id="@+id/add_iv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/add_normal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

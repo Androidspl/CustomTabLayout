@@ -1,0 +1,1 @@
+{"message": "ok","status": "200","state": "5","data": [[{"context": "甜品"},{"context": "火锅"},{"context": "自助餐"}],[{"context": "朝阳"},{"context": "丰台"},{"context": "海淀"}],[{"context": "理我最近"},{"context": "好评优先"},{"context": "人气最高"}],[{"context": "早餐"},{"context": "午餐"},{"context": "晚餐"}]]}

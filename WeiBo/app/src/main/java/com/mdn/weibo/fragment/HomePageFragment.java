@@ -1,4 +1,4 @@
-package com.mdn.weibo.fragment;
+﻿package com.mdn.weibo.fragment;
 
 import android.content.res.Resources;
 import android.os.Build;
@@ -30,7 +30,9 @@ import java.util.List;
 
 public class HomePageFragment extends Fragment {
 
-    private View view;
+  
+//MySecondGit提交第一次提交远程。  
+private View view;
     private MaterialTabLayout tablayout;
     private ViewPager viewpager;
     private List<String> list_title;

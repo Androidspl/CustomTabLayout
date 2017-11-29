@@ -17,7 +17,6 @@ import java.util.List;
 
 public class TabFragmentAdapter extends FragmentPagerAdapter{
 
-    private int[] mTabImages;
     private Context context;
     private List<Fragment> list_fragment;
     private List<String> list_title;
@@ -27,12 +26,11 @@ public class TabFragmentAdapter extends FragmentPagerAdapter{
     }
 
     public TabFragmentAdapter(Context context, FragmentManager fm, List<Fragment> list_fragment,
-                              List<String> list_title,  int[] mTabImages ) {
+                              List<String> list_title ) {
         super(fm);
         this.context = context;
         this.list_fragment = list_fragment;
         this.list_title = list_title;
-        this.mTabImages = mTabImages;
     }
 
     @Override
@@ -51,16 +49,6 @@ public class TabFragmentAdapter extends FragmentPagerAdapter{
         //这段被注的代码，是只显示文字，不显示图标
         return  list_title.get(position % list_title.size());
 
-//        Drawable dImage = context.getResources().getDrawable(mTabImages[position]);
-////        dImage.setBounds(0, 0, dImage.getIntrinsicWidth(), dImage.getIntrinsicHeight());
-//        dImage.setBounds(0,0,15,15);
-//        //这里前面加的空格就是为图片显示
-////        SpannableString sp = new SpannableString("  "+ list_title.get(position));
-//        SpannableString sp = new SpannableString(list_title.get(position) + "   ");
-//        ImageSpan imageSpan = new ImageSpan(dImage, ImageSpan.ALIGN_BOTTOM);
-////        ImageSpan imageSpan = new ImageSpan(dImage, ImageSpan.ALIGN_BASELINE);
-//        sp.setSpan(imageSpan, 3, 4, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//        return  sp;
     }
 
 }
